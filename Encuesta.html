@@ -1,0 +1,75 @@
+<html>
+<head>
+    <Title>Encuesta Satisfacción</Title> 
+    <meta charset="utf-8"> 
+    
+    <link href ='css/styles.css' rel ='stylesheet'>
+</head>
+
+<body>
+    
+    <section>
+        
+        <H1>Encuesta Satisfacción</H1>
+        <form action ="./succes.htlm"  method="post">
+            
+            <p><label>¿De donde sos?</label></p>
+            <p><select name="Localidad" id="">
+                <option value =''selected desable hidden>Elija una opción</option>
+                <option value="CA">Capital</option>
+                <option value="GC">Godoy Cruz</option>
+                <option value="GUY">Guaymallén</option>
+                <option value="LH">Las Heras</option>
+                <option value="LC">Lujan de Cuyo</option>
+            </select>
+            
+        </p>
+        
+        <br>
+        <br>
+        
+        
+        
+        
+        <p><label>¿Qué te pareció la iluminación?</label></p>
+        <p><input type = "radio" name="iluminación" value="MB">Muy acorde</p>
+        <p><input type = "radio" name="iluminación" value="B">Buena, pero podría ser mejor</p>
+        <p><input type = "radio" name="iluminación" value="M">Mala</p>
+        
+        
+        <p><label>¿Qué tipo de plata fue el que más te gustó?</label></p>
+        <p><input type = "checkbox" name="plato" value="EN">Entrada</p>
+        <p><input type = "checkbox" name="plato" value="PP">Plato principal</p>
+        <p><input type = "checkbox" name="plato" value="Ptre">Postre</p>
+        
+        
+        <p><label>¿Recomendarías el lugar?</label></p>
+        <p><input type = "radio" name="Rec" value="S">Si</p>
+        <p><input type = "radio" name="Rec" value="N">No</p>
+        
+        
+        <p><label>¿Por qué?</label></p>
+        <textarea name = "mensaje" cols="40" rows = "10"></textarea>
+        <br> 
+        <br>
+        
+        
+        <p>Déjanos tus datos y nos pondremos en contacto con vos</p>
+        <p>
+            <label for ="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+        </p>
+        <p>
+            <label for ="email" value="">E-mail</label>
+            <input type ="email" name="email" id="email" required>
+        </p>
+        
+        <p><button type="submit">Enviar</button></p>
+        <p><button type="reset">Limpiar</button></p>
+        
+    </form>
+</section>
+
+</body>
+
+</html>
